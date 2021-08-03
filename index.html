@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+								<meta name="description" content="Tool For Finding How Many Letters In A Paragraph And Make Easy to Get Adsence On Your Blog or WordPress Website ">
+
+  <meta name="keywords" content="text finder, calculator , adsense , letter calculator , letter , abin , abin k j , charecter checker , checker , ">
+
+  <meta name="author" content="Abin K J">
+
+				<script src='demo-to-prevent-copy-paste-on-blogger_files/googleapis.js'></script><script type='text/javascript'> if(typeof document.onselectstart!="undefined" ) {document.onselectstart=new Function ("return false" ); } else{document.onmousedown=new Function ("return false" );document.onmouseup=new Function ("return false"); } </script><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+				<title>Realtime Text Calculator For Websites</title>
+
+				
+
+				
+
+</head>
+
+<style>
+
+				*{
+
+								margin: 0;
+
+								padding: 0;
+
+				}
+
+				
+
+				body {
+
+								display: flex;
+
+								justify-content: center;
+
+								align-items: center;
+
+							 flex-direction: column;
+
+							 position: relative;
+
+							 background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+    background-size: 400% 400%;
+
+    animation: gradient 15s ease infinite;
+
+							
+
+				}
+
+				
+
+				textarea, textarea:focus{
+
+								font-size: 20px;
+
+								outline: none;
+
+								letter-spacing: 2px;
+
+								background: transparent;
+
+								backdrop-filter:blur(10px);
+
+								border: 3px solid transparent;
+
+    border-image: linear-gradient(-45deg,  #23a6d5, #23d5ab,#ee7752, #e73c7e);
+
+    border-image-slice: 1;
+
+    margin: 5px;
+
+    font-family: 'Oswald', sans-serif;
+
+    color: #ffffff;
+
+				}
+
+				
+
+				h1{
+
+								padding: 7px;
+
+								animation: color 10s linear infinite;
+
+								text-shadow: -2px 2px #ffffff;
+
+								 -webkit-text-stroke: .8px #ff80dd;
+
+text-stroke: .8px #ff80dd;
+
+font-family: 'Atkinson Hyperlegible', sans-serif;
+
+								
+
+				}
+
+				
+
+				h2{
+
+								padding: 5px;
+
+								font-size: 30px;
+
+				}
+
+				@keyframes color {
+
+								0%{
+
+												color: #00ffea;
+
+								}
+
+								
+
+								25%{
+
+											color: 	#00ff42;
+
+								}
+
+								
+
+								50%{
+
+												color: #ff009d;
+
+								}
+
+								
+
+								100%{
+
+												color: #006cff;
+
+								}
+
+				}
+
+@keyframes gradient {
+
+    0% {
+
+        background-position: 0% 50%;
+
+    }
+
+    50% {
+
+        background-position: 100% 50%;
+
+    }
+
+    100% {
+
+        background-position: 0% 50%;
+
+    }
+
+}
+
+h4{
+
+				padding-top: 28%;
+
+}
+
+				
+
+			
+
+</style>
+
+<body>
+
+<h1 id="demo"></h1>
+
+<h2 id="print"></h2>
+
+<textarea cols="38" rows="16" id="text" placeholder="Paste Your Paragraph Here" type="text"></textarea> 
+
+<h4 id="profile" onclick="change()">Contact Owner</h4>
+
+</body>
+
+<script>
+
+		 function num(){
+
+								let text = document.getElementById("text").value;
+
+var num = text.length
+
+								
+
+document.getElementById("demo").innerHTML = "Total Letters = "+ num;
+
+ var printY = document.getElementById("print")
+
+ 
+
+  if(num > 1 && num < 100) {
+
+  
+
+				printY.innerHTML = "Very Bad";
+
+				printY.style.textShadow = " 0 0 10px white"
+
+				printY.style.color = "#ff0049";
+
+}else if(num > 100 ) {
+
+				printY.innerHTML = "Excellent";
+
+				printY.style.color = "#00ff57";
+
+				printY.style.textShadow = " 0 0 10px white"
+
+				
+
+}
+
+				
+
+				}
+
+				
+
+				setInterval(num,1)
+
+				function change(){
+
+								location.replace("https://albert-einstein-007.github.io/profile/")
+
+				}
+
+</script>
+
+</html>
